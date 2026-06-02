@@ -1,9 +1,3 @@
-/*
- * ═══════════════════════════════════════════════
- *  HERO — FULL BLEED + TRANSPARENT HEADER
- *  Paste this before <head> block in your theme.liquid
- * ═══════════════════════════════════════════════
- */
 <style>
 /* Pulls the hero up behind the transparent header */
 main#MainContent {
