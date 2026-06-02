@@ -1,0 +1,33 @@
+/*
+ * ═══════════════════════════════════════════════
+ *  HERO — FULL BLEED + TRANSPARENT HEADER
+ *  Paste this before <head> block in your theme.liquid
+ * ═══════════════════════════════════════════════
+ */
+
+/* Pulls the hero up behind the transparent header */
+main#MainContent {
+  margin-top: calc(-1 * var(--header-height, 80px));
+}
+
+/* Forces hero to fill exactly one full screen height */
+.hero-wrapper .hero,
+.hero-wrapper .hero__container {
+  min-height: 100svh !important;
+  max-height: 100svh !important;
+}
+
+/* Shows the full image without any cropping */
+.hero-wrapper img,
+.hero-wrapper .media img,
+.hero-wrapper media-component img {
+  object-fit: fill !important;
+  object-position: center center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Adds top padding so text doesn't hide behind the header */
+.hero-wrapper .hero__content-wrapper {
+  padding-top: max(var(--header-height, 80px), 80px) !important;
+}
