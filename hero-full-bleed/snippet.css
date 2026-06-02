@@ -4,7 +4,7 @@
  *  Paste this before <head> block in your theme.liquid
  * ═══════════════════════════════════════════════
  */
-
+<style>
 /* Pulls the hero up behind the transparent header */
 main#MainContent {
   margin-top: calc(-1 * var(--header-height, 80px));
@@ -31,3 +31,4 @@ main#MainContent {
 .hero-wrapper .hero__content-wrapper {
   padding-top: max(var(--header-height, 80px), 80px) !important;
 }
+</style>
