@@ -21,7 +21,7 @@ Transparent header included.
 **1. Go to your Shopify admin**
 Online Store → Themes → Edit code → `theme.liquid`
 
-**2. Find the closing `</head>` tag**
+**2. Find the opening `<head>` tag**
 
 **3. Paste this code just before it**
 ```css
